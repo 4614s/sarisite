@@ -124,6 +124,8 @@ body {
   justify-content: center;
 
   gap: 5px;
+
+  flex-wrap: wrap;
 }
 
 .ortayahizalananlaryatayda {
@@ -136,6 +138,12 @@ ul {
 }
 ul li::before {
   content: "– ";
+}
+.githublink{
+  background-color: black;
+}
+.glitchlink{
+  background: linear-gradient(180deg,lightblue,pink);
 }
 /* 
 @media (700px) olan yatay mod( telefondaki)
