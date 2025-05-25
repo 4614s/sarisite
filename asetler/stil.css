@@ -5,6 +5,10 @@ body {
   background-color: #ffff00;
 
   font-family: sans-serif;
+
+  margin:0;
+
+  padding: 0;
 }
 
 ::selection {
@@ -147,7 +151,10 @@ ul li::before {
 }
 footer{
  border-top: 1px solid black; 
+  
  background-color: #ffea00;
+  
+ margin: 0;
 }
 .telifyazisi{
   border-bottom: 1px solid gray;
