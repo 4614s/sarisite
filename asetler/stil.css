@@ -111,7 +111,14 @@ body {
   text-decoration: none;
 
   padding: 7px;
+
+  transition: transform 0.3s ease;
 }
+
+.linktext:active{
+  transform: scale(0.9);
+}
+
 .linkbuttons {
   border-radius: 20px;
 
