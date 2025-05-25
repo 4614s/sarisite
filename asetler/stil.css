@@ -145,6 +145,13 @@ ul li::before {
 .glitchlink{
   background: linear-gradient(180deg,lightblue,pink);
 }
+footer{
+ border-top: 1px solid black; 
+ background-color: #ffea00;
+}
+.telifyazisi{
+  border-bottom: 1px solid gray;
+}
 /* 
 @media (700px) olan yatay mod( telefondaki)
 ve bilgisayarlar icin
