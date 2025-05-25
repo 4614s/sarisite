@@ -8,6 +8,8 @@ function bizeUlasin() {
 alert("Bize şuan ulaşamazsınız çünkü biz de bilmiyoruz nerde olduğumuzu:)");
 }
 
+console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara açık.");
+
 let tarih = new Date();
 let guncelYil = tarih.getFullYear();
 document.getElementById("year").textContent = guncelYil;
