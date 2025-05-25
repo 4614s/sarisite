@@ -1,8 +1,14 @@
 /*
 Sarısite giriş yapılmış sayfa CSS dosyası
 */
+:root {
+  --sari1: #ffff00;
+  --sari2: #ffea00;
+  --sari3: #ffd700;
+}
+
 body {
-  background-color: #ffff00;
+  background-color: var(--sari1);
 
   font-family: sans-serif;
 
@@ -32,7 +38,7 @@ body {
 }
 
 #arama-cubugu {
-  background-color: #ffd700;
+  background-color: var(--sari3);
 
   border: 3px black solid;
 
@@ -48,7 +54,7 @@ body {
 }
 
 #arama-cubugu:focus {
-  background-color: #ffea00;
+  background-color: var(--sari2);
 
   border: 4px solid #444;
 
@@ -56,7 +62,7 @@ body {
 }
 
 .kutu {
-  background-color: #ffea00;
+  background-color: var(--sari2);
 
   border: 2px black solid;
 
@@ -84,7 +90,7 @@ body {
 }
 
 #gonderiolustur {
-  background-color: #ffea00;
+  background-color: var(--sari2);
 
   border: 2px black solid;
 
@@ -151,7 +157,7 @@ ul li::before {
 }
 footer{
   border-top: 1px solid black;
-  background-color: #ffea00;
+  background-color: var(--sari2);
   width: 100%;
   margin:0;
 }
