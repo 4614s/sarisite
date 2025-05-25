@@ -6,4 +6,4 @@ function gonderiolustur() {
 }
 let tarih = new Date();
 let guncelYil = tarih.getFullYear();
-document.getelementByID("year").textContent = guncelYil;
+document.getElementByID("year").textContent = guncelYil;
