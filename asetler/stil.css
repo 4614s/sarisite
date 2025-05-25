@@ -2,9 +2,9 @@
 Sarısite giriş yapılmış sayfa CSS dosyası
 */
 :root {
-  --sari1: #ffff00;
-  --sari2: #ffea00;
-  --sari3: #ffd700;
+  --sari1: #ffff00; /*Tam Sarı / Arkaplan Rengi */
+  --sari2: #ffea00; /*Orta Ton Sarı / Footer,Kutular,Arama Çubuğu Focus Efekti Rengi*/
+  --sari3: #ffd700; /*Koyu Sarı / Arama Çubuğu Rengi */
 }
 
 body {
