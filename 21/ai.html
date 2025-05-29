@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../asetler/stil.css">
+  <script>
+     if (localStorage.getItem("giris") === "true") {
+      } else {
+        window.location.href = "https://4614s.github.io/sarisite/";
+      }
+  </script>
+  <title>Sarızekâ AI</title>
+</head>
+<body>
+  
+  <article class="kutu" style="width:60%;">
+    <p class="gonderi-paragraf">Merhaba, ben Sarızeka! SarıSite'nin sohbet eden zekasıyım 
+    Cevaplarımı sevgili dostum OnurAI’dan alıyorum, Biraz sessiz ama çok şey bilir!
+    Hadi bakalım, bir şey sor da sana nasıl yardımcı oluyorum gör! 😉</p>
+  </article>
+
+  <button 
+  onclick="sorusordur()"
+  style="background: #ffea00;
+         border: 2px solid black;
+         border-radius: 20px;
+         margin: 15px;
+         padding: 20px;" 
+    >Soru Sor</button>
+  
+  <article id="soru" class=" kutu" style="width: 60%;margin-left: auto;display: none;">
+    
+    
+  </article>
+  
+ <article  class="mesaj kutu" style="width: 60%;margin-left: auto;display: none;">
+    
+  </article>
+  
+                       <!--OnurAI APIsi--> 
+ <script src="https://4614s.github.io/Onur-AI/cevaplar.js"></script>
+ <script>
+  let mesaj = document.getElementByClassName("mesaj");
+  let soru = document.getElementById("soru");
+  function sorusordur() {
+   let soru1 = prompt("Bir şey yazın...");
+   mesaj.style.display = "block";
+   soru.style.display = "block";
+  }
+   
+  function toLowerCaseTR(str) {
+  return str
+    .replace(/İ/g, 'i')  
+    .replace(/I/g, 'ı')  
+    .replace(/Ş/g, 'ş')
+    .replace(/Ğ/g, 'ğ')
+    .replace(/Ü/g, 'ü')
+    .replace(/Ö/g, 'ö')
+    .replace(/Ç/g, 'ç')
+    .toLowerCase();
+  }
+   
+  if (!soru1 || !soru1.trim()) {
+    mesaj.innerHTML = "Hata, mesaj gönderilemedi! Bunun bir kaç farklı sebebi olabilir <details><summary>1. Sebep</summary>Mesajınız boş olduğundan OnurAI mesajınızı almayabilir</details>";
+
+  } else {
+    let soru = toLowerCaseTR(soru1).trim();
+    document.getElementById("soru").textContent = soru1;
+
+    if (cevaplar[soru]) {
+      mesaj.textContent = cevaplar[soru];
+    } else {
+      mesaj.innerHTML = "<b>Kusura bakma, bunu anlamadım. Başka bir soru sorabilir misin?</b>";
+    }
+  }
+ </script>
+</body>
+</html>
