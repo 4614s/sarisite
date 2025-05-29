@@ -16,6 +16,7 @@
 <body>
   
   <article class="kutu" style="width:60%;">
+   <p class="gonderi-kullaniciadi" >Sarızekâ AI</p>
     <p class="gonderi-paragraf">Merhaba, ben Sarızeka! SarıSite'nin sohbet eden zekasıyım 
     Cevaplarımı sevgili dostum OnurAI’dan alıyorum, Biraz sessiz ama çok şey bilir!
     Hadi bakalım, bir şey sor da sana nasıl yardımcı oluyorum gör! 😉</p>
@@ -41,40 +42,47 @@
   
                        <!--OnurAI APIsi--> 
  <script src="https://4614s.github.io/Onur-AI/cevaplar.js"></script>
- <script>
-  let mesaj = document.getElementByClassName("mesaj");
-  let soru = document.getElementById("soru");
-  function sorusordur() {
-   let soru1 = prompt("Bir şey yazın...");
-   mesaj.style.display = "block";
-   soru.style.display = "block";
-  }
-   
+
+    <script>
   function toLowerCaseTR(str) {
-  return str
-    .replace(/İ/g, 'i')  
-    .replace(/I/g, 'ı')  
-    .replace(/Ş/g, 'ş')
-    .replace(/Ğ/g, 'ğ')
-    .replace(/Ü/g, 'ü')
-    .replace(/Ö/g, 'ö')
-    .replace(/Ç/g, 'ç')
-    .toLowerCase();
+    return str
+      .replace(/İ/g, 'i')
+      .replace(/I/g, 'ı')
+      .replace(/Ş/g, 'ş')
+      .replace(/Ğ/g, 'ğ')
+      .replace(/Ü/g, 'ü')
+      .replace(/Ö/g, 'ö')
+      .replace(/Ç/g, 'ç')
+      .toLowerCase();
   }
-   
-  if (!soru1 || !soru1.trim()) {
-    mesaj.innerHTML = "Hata, mesaj gönderilemedi! Bunun bir kaç farklı sebebi olabilir <details><summary>1. Sebep</summary>Mesajınız boş olduğundan OnurAI mesajınızı almayabilir</details>";
 
-  } else {
-    let soru = toLowerCaseTR(soru1).trim();
-    document.getElementById("soru").textContent = soru1;
+  function sorusordur() {
+    let soru1 = prompt("Bir şey yazın...");
+    let mesaj = document.getElementById("mesaj");
+    let soru = document.getElementById("soru");
+    let buton = document.querySelector("button");
 
-    if (cevaplar[soru]) {
-      mesaj.textContent = cevaplar[soru];
+    if (!soru1 || !soru1.trim()) {
+      mesaj.style.display = "block";
+      mesaj.innerHTML = `Hata, mesaj gönderilemedi! 
+        <details><summary>1. Sebep</summary>Mesajınız boş olduğundan OnurAI mesajınızı almayabilir</details>`;
+      buton.style.display = "none"; // Buton yine kaybolsun
+      return;
+    }
+
+    let temizSoru = toLowerCaseTR(soru1.trim());
+    soru.style.display = "block";
+    mesaj.style.display = "block";
+    buton.style.display = "none"; // Butonu gizle
+
+    soru.innerHTML = `${soru1}`;
+
+    if (cevaplar[temizSoru]) {
+      mesaj.innerHTML = `${cevaplar[temizSoru]}`;
     } else {
-      mesaj.innerHTML = "<b>Kusura bakma, bunu anlamadım. Başka bir soru sorabilir misin?</b>";
+      mesaj.innerHTML = `Kusura bakma, bunu anlamadım. Başka bir soru sorabilir misin?`;
     }
   }
- </script>
-</body>
+  </script>
+ </body>
 </html>
