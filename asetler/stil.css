@@ -37,6 +37,11 @@ body {
   font-size: 0.7rem;
 }
 
+#isimayarlabutonu {
+  border: none;
+  background: rgba(0,0,0,0);
+}
+
 #arama-cubugu {
   background-color: var(--sari3);
 
