@@ -101,7 +101,7 @@ if(localStorage.getItem("giris") === "true"){
       <p class="gonderi-kullaniciadi">@SarısiteninKurucusu</p>
       <h2 class="gonderi-baslik">Buydu, bu oldu.</h2>
      <details><summary>Fotoğraf</summary>
-      <img src="../asetler/Başlıksız27_20250524101107.png" 
+      <img src="asetler/Başlıksız27_20250524101107.png" 
       style="width:320px;height:320px;border:1px solid black;"/>
      </details>
       <br/>
