@@ -43,10 +43,32 @@ if(localStorage.getItem("giris") === "true"){
       
   <article class="kutu">
       <p class="gonderi-kullaniciadi">Sistem Paylaşımı</p>
-      <h2 class="gonderi-baslik">SarıSite Sürekli Güncelleniyor</h2>
+      <h2 class="gonderi-baslik">SarıSite Güncelleme Notları</h2>
       <p class="gonderi-paragraf">
       <details> 
         <summary>Güncelleme Notları</summary>
+        <details>
+        <summary>İlk Sarısite'de neler vardı?</summary>
+        <b>Neler vardı?</b>
+        <ul>
+        <li>SARISİTE yazısı</li>
+        <li>Arama çubuğu</li>
+        <li>Eklemek İstekleriniz yazısı</li>
+        <li>Sosyal medya hesapları (youtube ve instagram)</li>
+        </ul>
+        <b>Neler yoktu?</b>
+        <ul>
+        <li>Giriş sistemi</li>
+        <li>Sürümler</li>
+        <li>Size özel karşılama yazısı</li>
+        <li>Veri depolama <b>(Şuan hala verilerinizi toplamayı bilmiyoruz :)</b> Merak etmeyin)</li>
+        <li>Gönderiler</li> 
+        </ul>
+        <details>
+        <summary>Sarısitenin ilk halinin fotoğrafı</summary>
+        <img src="asetler/ilksarisite.png" width="300px" height="900px" />
+        </details>
+        </details>
         <details>
           <summary>v2.0 Sürümü Yenilikleri</summary>
           <ul>
@@ -108,7 +130,7 @@ if(localStorage.getItem("giris") === "true"){
         <li>Hata: Sarısite'ye ulaşılamazsa</li>
         </ul>
         Bunlar kolay gibi görünsede 2 sayfanın kodunu tek bir script dosyasına aktarmak kolay değildi.
-        Ve yükleniyor sayfasınıda yapıldı <b>tek sayfada 4 işlev!</b>
+        Ve yükleniyor sayfasıda yapıldı <b>tek sayfada 4 işlev!</b>
         </details>
       </details>
         <br />
