@@ -60,13 +60,14 @@ if(localStorage.getItem("giris") === "true"){
         <ul>
         <li>Giriş sistemi</li>
         <li>Sürümler</li>
+        <li>Gönderiler</li>
         <li>Size özel karşılama yazısı</li>
-        <li>Veri depolama <b>(Şuan hala verilerinizi toplamıyoruz :)</b> Merak etmeyin)</li>
-        <li>Gönderiler</li> 
+        <li>Veri depolama <b>(Şuan hala verilerinizi toplamıyoruz :)</b> Merak etmeyin)</li> 
         </ul>
         <details>
         <summary>Sarısitenin ilk halinin fotoğrafı</summary>
-        <img src="asetler/ilksarisite.jpg" width="300px" height="900px" />
+        <img src="asetler/ilksarisite.jpg" width="300px" height="550px" />
+        Ve ozamanlar Sarısite glitch'de barındırılıyordu.
         </details>
         </details>
         <details>
