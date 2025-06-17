@@ -234,4 +234,5 @@ function bizeUlasin() {
 
 
 console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara açık.");
+ }
 }
