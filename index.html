@@ -19,21 +19,7 @@
     <link rel="stylesheet" href="asetler/stil.css">
   </head>
   <body>
-    <p id="yukleniyor"></p>
-    <p id="hata-mesaji" style="display:none;"></p>
-    <script>
-      let yazilar = ["Yükleniyor", "Yükleniyor.", "Yükleniyor..", "Yükleniyor..."];
-let i = 0, span = document.getElementById("yukleniyoryazi");
-
-let anim = setInterval(() => {
-  span.textContent = yazilar[i++ % yazilar.length];
-}, 500);
-
-setTimeout(() => {
-  clearInterval(anim);
-  document.getElementById("hata-mesaji").style.display = "block";
-}, 20000);
-    </script>
+    <script src="asetler/connecting.js"></script>
   </body>
  <script src="asetler/page.js"></script>
 </html>
