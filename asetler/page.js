@@ -66,7 +66,7 @@ if(localStorage.getItem("giris") === "true"){
         </ul>
         <details>
         <summary>Sarısitenin ilk halinin fotoğrafı</summary>
-        <img src="asetler/ilksarisite.png" width="300px" height="900px" />
+        <img src="asetler/ilksarisite.jpg" width="300px" height="900px" />
         </details>
         </details>
         <details>
