@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let guncelYil = tarih.getFullYear();
   document.getElementById("year").textContent = guncelYil;
 });
- }
+ 
 
 function gonderiolustur() {
   alert(
@@ -231,6 +231,7 @@ function gonderiolustur() {
 
 function bizeUlasin() {
   alert("Bize şu an ulaşamazsınız çünkü biz de bilmiyoruz neredeyiz :)");
-}
+
 
 console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara açık.");
+}
