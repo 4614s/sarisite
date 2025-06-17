@@ -9,116 +9,16 @@
       Burası ilan sitesi değil o iş 
       Sahibindenin işi burası bizim sitemiz."
     />
-    <title>SARISİTE</title>
+    <meta name="copyright" content="© 2025 SARISİTE. Tüm hakları saklıdır.">
+    <title>SARISİTE 2.1.2</title>
     <link
       rel="icon"
       type="image/png"
       href="https://i.postimg.cc/D0393mJ9/Ba-l-ks-z24-20250503105333.png"
     />
-    <style>
-      body {
-        background-color: #ffff00;
-        font-family: Arial, sans-serif;
-      }
-      .sarisite {
-        font-size: 20vw;
-        text-align: center;
-        font-weight: bold;
-        margin: 25px;
-      }
-      .arama-cubugu {
-        background-color: #ffd700;
-        width: 93%;
-        padding: 10px;
-        border: 3px solid black;
-        border-radius: 30px;
-      }
-      .arama-cubugu:focus {
-        border: 3px solid red;
-        outline: none;
-      }
-      input.red-placeholder::placeholder {
-        color: red;
-      }
-      .girisyap {
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-        color: black;
-        text-decoration: none;
-        margin: 10px;
-        font-weight: bold;
-      }
-      .ortayahizala {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .not {
-        color: black;
-        font-size: 16px;
-      }
-      @media (min-width: 700px) {
-        .sarisite {
-          font-size: 16vw;
-        }
-      }
-      @media (min-width: 1505px) {
-        .sarisite {
-          font-size: 13vw;
-        }
-      }
-    </style>
-    <script>
-      // Eğer kullanıcı giriş yaptıysa (localStorage'da 'giris' true ise)
-      if (localStorage.getItem("giris") === "true") {
-        // Uzun URL'ye yönlendir
-        window.location.href =
-       "../sarisite/21/";
-      }
-    </script>
+    <link rel="stylesheet" href="asetler/stil.css">
+    <script src="asetler/page.js"></script>
   </head>
-  <body>
-    <div class="ortayahizala">
-      <p class="sarisite">SARISİTE</p>
-    </div>
-    <input
-      type="text"
-      id="input1"
-      class="arama-cubugu"
-      placeholder="Arama yapın..."
-    />
-    <br />
-    <br />
-    <a href="../sarisite/giris/" class="girisyap">
-      Giriş Yap! ve Tüm Özelliklere Eriş</a
-    >
-    <br />
-    <div class="ortayahizala">
-      <p class="not">
-        Not: Bu sayfa bomboş hatta kodları bile yarım
-        <b style="text-decoration: underline"
-          >ama sarısite sandığın gibi kötü bir yer değil gerçek SARISİTEye
-          girmek için "Giriş Yap! ve Tüm Özelliklere Eriş" Yazısına tıkla!
-        </b>
-      </p>
-    </div>
-    <script>
-      const input = document.getElementById("input1");
-
-      input.addEventListener("focus", function () {
-        input.placeholder =
-          "Bu özelliği kullanabilmek için giriş yapmalısınız!";
-
-        input.classList.add("red-placeholder");
-      });
-
-      input.addEventListener("blur", function () {
-        input.placeholder = "Arama yapın...";
-
-        input.classList.remove("red-placeholder");
-      });
-    </script>
-  </body>
+  <body></body>
   </html>
   
