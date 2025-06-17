@@ -31,7 +31,7 @@ let kodlar = [
           localStorage.setItem("giris", "true");
           setTimeout(function () {
             window.location.href =
-              "../21/";
+              "../sarisite/";
           }, 100);
         } else {
           alert("Hatalı veya eksik kod girdiniz.");
