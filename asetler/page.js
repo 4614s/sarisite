@@ -173,9 +173,11 @@ else{
     />
     <br />
     <br />
-    <a href="../sarisite/giris/" class="girisyap">
+    <div style="display:flex; justify-content:center; align-item: center; padding: 9px;">
+    <a href="../sarisite/giris/" style="color: black:font-size: 1.2rem;">
       Giriş Yap! ve Tüm Özelliklere Eriş</a
     >
+    </div>
     <br />
     <div class="ortayahizalananlaryatayda">
       <p class="not">
