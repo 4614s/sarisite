@@ -1,5 +1,10 @@
 //Sarısite giris yapılmış sayfa js kodları
 
+if (!location.hostname.includes("4614s.github.io")) {
+ document.body.innerHTML = "<h1>Bu içerik yalnızca SarıSite'de çalışır.</h1>";
+  throw new Error("Yetkisiz alan adı: " + location.hostname);
+} else {
+
 if(localStorage.getItem("giris") === "true"){
  document.querySelector("body").innerHTML = 
        
@@ -216,6 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let guncelYil = tarih.getFullYear();
   document.getElementById("year").textContent = guncelYil;
 });
+ }
 
 function gonderiolustur() {
   alert(
