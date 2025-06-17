@@ -61,7 +61,7 @@ if(localStorage.getItem("giris") === "true"){
         <li>Giriş sistemi</li>
         <li>Sürümler</li>
         <li>Size özel karşılama yazısı</li>
-        <li>Veri depolama <b>(Şuan hala verilerinizi toplamayı bilmiyoruz :)</b> Merak etmeyin)</li>
+        <li>Veri depolama <b>(Şuan hala verilerinizi toplamıyoruz :)</b> Merak etmeyin)</li>
         <li>Gönderiler</li> 
         </ul>
         <details>
@@ -138,17 +138,6 @@ if(localStorage.getItem("giris") === "true"){
       </p>
     
   </article>
-      
-  <article class="kutu">
-      <p class="gonderi-kullaniciadi">@SarısiteninKurucusu</p>
-      <h2 class="gonderi-baslik">Buydu, bu oldu.</h2>
-     <details><summary>Fotoğraf</summary>
-      <img src="asetler/Başlıksız27_20250524101107.png" 
-      style="width:320px;height:320px;border:1px solid black;"/>
-     </details>
-      <br/>
-    
-   </article>
       
     <div class="ortayahizalananlaryatayda">
       <button onclick="gonderiolustur()" id="gonderiolustur">
