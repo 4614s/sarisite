@@ -2,7 +2,7 @@
 
 if (!location.hostname.includes("4614s.github.io")) {
  document.body.innerHTML = "<h1>Bu içerik yalnızca SarıSite'de çalışır.</h1>";
-  throw new Error("Yetkisiz alan adı: " + location.hostname);
+  console.log("Yetkisiz alan adı: " + location.hostname);
 } else {
 
 if(localStorage.getItem("giris") === "true"){
