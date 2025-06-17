@@ -31,7 +31,7 @@ let kodlar = [
           localStorage.setItem("giris", "true");
           setTimeout(function () {
             window.location.href =
-              "../sarisite/";
+              "https://4614s.github.io/sarisite/";
           }, 100);
         } else {
           alert("Hatalı veya eksik kod girdiniz.");
