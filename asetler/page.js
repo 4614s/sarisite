@@ -95,9 +95,24 @@ if(localStorage.getItem("giris") === "true"){
             <li>Bi anlık unutuyor ama sonra sizi hatırlıyor merak etmeyin.<b>Sarısite sizi hatırlar</b></li> 
           </ul>
         </details>
+        <details>
+        <summary>v2.2 Sürümü Yenilikleri</summary>
+        Tamamen Sarısite'yi baştan yazdık ama görünüşteki 
+        tek fark tarayıcınızın adres çubuğunda 4614s.github.io/sarisite/21/
+        yerine düz 4614s.github.io/sarisite/ yazması gibi görünebilir ama
+        Tek bir sayfada 4 farklı işlev yapabiliyoruz.
+        <ul>
+        <li>Giriş yapılmamış Sarısite</li>
+        <li>Giriş yapılmış Sarısite</li>
+        <li>Yükleniyor... yazısı belki Sarısite'ye biraz geç girerseniz diye.</li>
+        <li>Hata: Sarısite'ye ulaşılamazsa</li>
+        </ul>
+        Bunlar kolay gibi görünsede 2 sayfanın kodunu tek bir script dosyasına aktarmak kolay değildi.
+        Ve yükleniyor sayfasınıda yapıldı <b>tek sayfada 4 işlev!</b>
+        </details>
       </details>
         <br />
-        Bilgilendirme SarıSite Şuanda v2.1.2 Sürümünde
+        Bilgilendirme SarıSite Şuanda v2.2 Sürümünde
       </p>
     
   </article>
