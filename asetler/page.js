@@ -1,10 +1,9 @@
 //Sarısite giris yapılmış sayfa js kodları
 
-if(localStorage.getItem("giris"){
+if(localStorage.getItem("giris") === "true"){
  document.querySelector("body").innerHTML = 
-   `<body translate="no">
-    
-    <header>
+       
+    `<header>
       
     <p class="sarisite">SARISİTE</p>
     <p style="gap: 1vw" class="ortayahizalananlaryatayda" id="description">
@@ -160,15 +159,11 @@ if(localStorage.getItem("giris"){
     <br/>
     <br/>
       
-    </footer>
-
-    <script src="../asetler/scriptx.js"></script>
-  </body>`;
+    </footer>`;
 }
 else{ 
  document.querySelector("body").innerHTML = 
-  `<body>
-    <div class="ortayahizala">
+  ` <div class="ortayahizala">
       <p class="sarisite">SARISİTE</p>
     </div>
     <input
@@ -190,8 +185,7 @@ else{
           girmek için "Giriş Yap! ve Tüm Özelliklere Eriş" Yazısına tıkla!
         </b>
       </p>
-    </div>
-  </body>`;
+    </div>`;
 }
 
 
