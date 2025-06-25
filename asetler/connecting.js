@@ -18,3 +18,7 @@ setTimeout(() => {
     </div>
   `);
 }, 20000);
+
+setTimeout(() => {
+  alert("Sarısite hiç ilgi görmediği ve ziyaret edilmediği için hostingi gereksiz bulunmuştur ve geçici olarak kapanmıştır.");
+}, 22500);
