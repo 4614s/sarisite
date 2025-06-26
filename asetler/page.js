@@ -6,8 +6,8 @@ if (!location.hostname.includes("sarisite.pages.dev")) {
 } else {
 
 if(localStorage.getItem("giris") === "true"){
- document.querySelector("body").innerHTML = 
-       
+ document.title = `SARISİTE 2.2`;
+ document.querySelector("body").innerHTML =        
     `<header>
       
     <p class="sarisite">SARISİTE</p>
@@ -191,6 +191,7 @@ if(localStorage.getItem("giris") === "true"){
     </footer>`;
 }
 else{ 
+ document.title = `SARISİTE`;
  document.querySelector("body").innerHTML = 
   ` <div class="ortayahizala">
       <p class="sarisite">SARISİTE</p>
