@@ -1,6 +1,6 @@
-//Sarısite giris yapılmış sayfa js kodları
+//Page.js içeriği eski = index.html , /21/ ve scriptx.js içeriğinden fazladır!
 
-if (!location.hostname.includes("4614s.github.io")) {
+if (!location.hostname.includes("sarisite.pages.dev")) {
  document.body.innerHTML = "<h1>Bu içerik yalnızca SarıSite'de çalışır.</h1>";
   console.log("Yetkisiz alan adı: " + location.hostname);
 } else {
@@ -30,13 +30,10 @@ if(localStorage.getItem("giris") === "true"){
  </article>
       
   <article class="kutu">
-   <p class="gonderi-kullaniciadi">Sistem</p>
-   <h2 class="gonderi-baslik">Burası Sarısite</h2>
+   <p class="gonderi-kullaniciadi">@SarısiteninKurucusu</p>
+   <h2 class="gonderi-baslik">En çok hostingi değişen site = Sarısite</h2>
    <p class="gonderi-paragraf">
-    
-     Artık daha iyi bir yerdesiniz uyku modu yok, 
-    açılırken 5-10 saniye beklemek yok! Ama biz bunu 
-    isteyerek seçmedik <a href="https://glitch.com"> Detaylı bilgi</a>
+    İlk başta glitchdeydik, sonra githuba geçtik, şimdide cloudflare pagestayız. Sonrada vercele geçmeyi düşünüyorum. 🤣 
    </p>
     
   </article>
