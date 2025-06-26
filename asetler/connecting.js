@@ -18,6 +18,7 @@ setTimeout(() => {
       </p>
     </div>
   `;
+  document.body.appendChild(errText);
 }, 20000);
 
 setTimeout(() => {
