@@ -1,3 +1,5 @@
+document.title = `SARISİTE YÜKLENİYOR...`;
+
 const y = document.createElement("p");
 y.id = "yukleniyor";
 document.body.appendChild(y);
@@ -9,6 +11,7 @@ const t = setInterval(() => {
 }, 400);
 
 setTimeout(() => { 
+  document.title = `SARISİTE (504 ERROR)`;
   clearInterval(t);
   const errText = document.createElement("div");
   errText.innerHTML = `
