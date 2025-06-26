@@ -8,17 +8,18 @@ const t = setInterval(() => {
   y.textContent = "Yükleniyor" + ".".repeat(a++ % 4);
 }, 400);
 
-setTimeout(() => {
-  clearInterval(t); 
-  y.insertAdjacentHTML("afterend", `
+setTimeout(() => { 
+  clearInvertal(t);
+  const errText = document.createElement("div");
+  errText.innerHTML = `
     <div style="padding:20px;display:flex;justify-content:center;align-items:center;">
       <p style="color:red;font-weight:bold">
         Error 504: SarıSite'ye ulaşılamıyor. En kısa sürede düzelteceğiz.
       </p>
     </div>
-  `);
+  `;
 }, 20000);
 
 setTimeout(() => {
   alert("Sarısite hiç ilgi görmediği ve ziyaret edilmediği için hostingi gereksiz bulunmuştur ve geçici olarak kapanmıştır.");
-}, 22500);
+}, 20200);
