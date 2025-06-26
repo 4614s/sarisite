@@ -9,7 +9,7 @@ const t = setInterval(() => {
 }, 400);
 
 setTimeout(() => { 
-  clearInvertal(t);
+  clearInterval(t);
   const errText = document.createElement("div");
   errText.innerHTML = `
     <div style="padding:20px;display:flex;justify-content:center;align-items:center;">
