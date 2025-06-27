@@ -5,6 +5,9 @@ if (!location.hostname.includes("sarisite.pages.dev")) {
   console.log("Yetkisiz alan adı: " + location.hostname);
 } else {
 
+
+
+
 if(localStorage.getItem("giris") === "true"){
  document.title = `SARISİTE 2.2`;
  document.querySelector("body").innerHTML =        
@@ -26,7 +29,7 @@ if(localStorage.getItem("giris") === "true"){
 
  <article class="kutu">
    <h2 id="hg-mesaji" class="gonderi-baslik">Hoş geldiniz!</h2>
-  <button id="isimayarlabutonu" onclick="isimAyarla()">İsim ayarla</button>
+  <button id="isimayarlabutonu">İsim ayarla</button>
  </article>
       
   <article class="kutu">
@@ -138,7 +141,7 @@ if(localStorage.getItem("giris") === "true"){
   </article>
       
     <div class="ortayahizalananlaryatayda">
-      <button onclick="gonderiolustur()" id="gonderiolustur">
+      <button id="gonderiolustur">
         Gönderi Oluştur
       </button>
     </div>
@@ -190,6 +193,10 @@ if(localStorage.getItem("giris") === "true"){
       
     </footer>`;
 }
+ 
+
+
+ 
 else{ 
  document.title = `SARISİTE`;
  document.querySelector("body").innerHTML = 
@@ -221,6 +228,8 @@ else{
 }
 
 
+ 
+ 
 function isimAyarla() {
   let isim = prompt("İsminiz (Sadece siz görürsünüz):");
   if (isim) {
@@ -240,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (kayitliIsim) {
     mesajGoster(kayitliIsim);
   }
-
+ 
   // Yıl güncellemesi
   let tarih = new Date();
   let guncelYil = tarih.getFullYear();
@@ -259,5 +268,8 @@ function bizeUlasin() {
 
 
 console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara açık.");
+
+document.querySelector("#isimayarlabutonu").addEventListener("click", isimAyarla);
+document.querySelector("#gonderiolustur").addEventListener("click", gonderiolustur);
  }
 }
