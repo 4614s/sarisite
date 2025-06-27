@@ -4,12 +4,24 @@ if (!location.hostname.includes("sarisite.pages.dev")) {
  document.body.innerHTML = "<h1>Bu içerik yalnızca SarıSite'de çalışır.</h1>";
   console.log("Yetkisiz alan adı: " + location.hostname);
 } else {
-
-
-
-
+  
 if(localStorage.getItem("giris") === "true"){
- document.title = `SARISİTE 2.2`;
+ echoSarisiteButEntranceTrue();
+}
+
+else{ 
+ echoSarisiteButEntranceFalse();
+}
+
+
+
+
+console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara açık.");
+}
+
+
+function echoSarisiteButEntranceTrue() {
+  document.title = `SARISİTE 2.2`;
  document.querySelector("body").innerHTML =        
     `<header>
       
@@ -155,9 +167,8 @@ if(localStorage.getItem("giris") === "true"){
         <p><b>© <span id="year"></span> SARISİTE - Tüm Hakları Saklıdır.</b></p>
       </div>
       <div class="ortayahizalananlaryatayda telifyazisi">
-      <a  href="#"
-      style="color: black;text-decoration:none;padding: 4px;"
-      onclick="bizeUlasin()"> Bize Ulaşın </a>
+      <a id="bizeulasin" href="#" style="color: black;text-decoration:none;padding: 4px;"
+      > Bize Ulaşın </a>
       </div>
     <h2 class="sosyallinks">Sosyal Bağlantılar</h2>
     <div class="buttons">
@@ -197,6 +208,8 @@ document.querySelector("#isimayarlabutonu").addEventListener("click", isimAyarla
 
 document.querySelector("#gonderiolustur").addEventListener("click", gonderiolustur);
 
+document.querySelector("#bizeulasin").addEventListener("click", bizeUlasin);
+
 function isimAyarla() {
   let isim = prompt("İsminiz (Sadece siz görürsünüz):");
   if (isim) {
@@ -210,20 +223,15 @@ function mesajGoster(isim) {
   document.getElementById("isimayarlabutonu").style.display = "none";
 }
 
-
-document.addEventListener("DOMContentLoaded", () => {
   let kayitliIsim = localStorage.getItem("isim");
   if (kayitliIsim) {
     mesajGoster(kayitliIsim);
   }
  
-  
   let tarih = new Date();
   let guncelYil = tarih.getFullYear();
   document.getElementById("year").textContent = guncelYil;
-});
  
-
 function gonderiolustur() {
   alert(
     "Gönderi Paylaşmak İçin Sosyal Medya Hesaplarımızdan birinden herhangi bir gönderimizin altına gönderi oluşturacağınızı belirtip başlık + içeriği yorum olarak yazın. En kısa sürede paylaşılır."
@@ -232,14 +240,11 @@ function gonderiolustur() {
 
 function bizeUlasin() {
   alert("Bize şu an ulaşamazsınız çünkü biz de bilmiyoruz neredeyiz :)");
+ }
 }
-}
- 
 
-
- 
-else{ 
- document.title = `SARISİTE`;
+function echoSarisiteButEntranceFalse() {
+  document.title = `SARISİTE`;
  document.querySelector("body").innerHTML = 
   ` <div class="ortayahizala">
       <p class="sarisite">SARISİTE</p>
@@ -251,7 +256,7 @@ else{
     />
     <br />
     <br />
-    <div style="display:flex; justify-content:center; align-item: center; padding: 9px;">
+    <div style="display:flex; justify-content:center; align-items: center; padding: 9px;">
     <a href="../sarisite/giris/" style="color: black;font-size: 1.2rem;">
       Giriş Yap! ve Tüm Özelliklere Eriş</a
     >
@@ -266,10 +271,4 @@ else{
         </b>
       </p>
     </div>`;
-}
-
-
-
- 
-console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara açık.");
-}
+  }
