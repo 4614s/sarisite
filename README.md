@@ -2,4 +2,4 @@
 Burası ilan sitesi değil. Burası bizim sitemiz!
 
 # URL 
-https://4614s.github.io/sarisite/
+https://sarisite.pages.dev
