@@ -7,14 +7,9 @@ if (!location.hostname.includes("sarisite.pages.dev")) {
   
 if(localStorage.getItem("giris") === "true"){
  echoSarisiteButEntranceTrue();
-}
-
-else{ 
+} else{ 
  echoSarisiteButEntranceFalse();
 }
-
-
-
 
 console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara açık.");
 }
@@ -257,7 +252,7 @@ function echoSarisiteButEntranceFalse() {
     <br />
     <br />
     <div style="display:flex; justify-content:center; align-items: center; padding: 9px;">
-    <a href="../sarisite/giris/" style="color: black;font-size: 1.2rem;">
+    <a href="giris" style="color: black;font-size: 1.2rem;">
       Giriş Yap! ve Tüm Özelliklere Eriş</a
     >
     </div>
