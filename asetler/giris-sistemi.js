@@ -9,14 +9,13 @@ let kodlar = [
         "v8gy2nxqzt",
       ];
 
-      document.getElementById("buton").addEventListener("click", function (e) {
+      document.getElementById("buton").addEventListener("click", e => {
         e.preventDefault();
 
         const form = document.getElementById("kodform");
 
         if (form.checkValidity()) {
           let rastgeleKod = kodlar[Math.floor(Math.random() * kodlar.length)];
-
           alert(`Sınırsız Kullanımlık, giriş kodunuz: ${rastgeleKod}`);
         } else {
           alert("Lütfen tüm alanları eksiksiz doldurun.");
@@ -29,10 +28,7 @@ let kodlar = [
         if (kodlar.includes(userPassword)) {
           alert("Kod doğru! İşlem başarılı.");
           localStorage.setItem("giris", "true");
-          setTimeout(function () {
-            window.location.href =
-              "https://4614s.github.io/sarisite/";
-          }, 100);
+          setTimeout(()=> window.location.href = "/", 100);
         } else {
           alert("Hatalı veya eksik kod girdiniz.");
         }
