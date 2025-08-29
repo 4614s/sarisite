@@ -17,7 +17,7 @@ console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara a
 
 function echoSarisiteButEntranceTrue() {
  document.title = `SARISİTE 2.2`;
- location.search = "?entrance=true";
+ if(location.search != "?entrance=true") location.search = "?entrance=true";
  document.querySelector("body").innerHTML =        
     `<header>
       
@@ -232,7 +232,7 @@ function bizeUlasin() {
 
 function echoSarisiteButEntranceFalse() {
  document.title = `SARISİTE`;
- location.search = "?entrance=false";
+ if(location.search != "?entrance=false") location.search = "?entrance=false";
  document.querySelector("body").innerHTML = 
   ` <div class="ortayahizala">
       <p class="sarisite">SARISİTE</p>
