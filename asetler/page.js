@@ -1,7 +1,7 @@
 //Page.js içeriği eski = index.html , /21/ ve scriptx.js içeriğinden fazladır!
 
 if (!location.hostname.includes("sarisite.pages.dev")) {
- document.body.innerHTML = "<h1>Bu içerik yalnızca SarıSite'de çalışır.</h1>";
+  document.body.innerHTML = "<h1>Bu içerik yalnızca SarıSite'de çalışır.</h1>";
   console.log("Yetkisiz alan adı: " + location.hostname);
 } else {
   
@@ -16,7 +16,8 @@ console.log("SarıSite gizli bölgeye hoş geldin! Burası sadece meraklılara a
 
 
 function echoSarisiteButEntranceTrue() {
-  document.title = `SARISİTE 2.2`;
+ document.title = `SARISİTE 2.2`;
+ location.search = "?entrance=true";
  document.querySelector("body").innerHTML =        
     `<header>
       
@@ -37,17 +38,8 @@ function echoSarisiteButEntranceTrue() {
  <article class="kutu">
    <h2 id="hg-mesaji" class="gonderi-baslik">Hoş geldiniz!</h2>
   <button id="isimayarlabutonu">İsim ayarla</button>
- </article>
-      
-  <article class="kutu">
-   <p class="gonderi-kullaniciadi">@SarısiteninKurucusu</p>
-   <h2 class="gonderi-baslik">En çok hostingi değişen site = Sarısite</h2>
-   <p class="gonderi-paragraf">
-    İlk başta glitchdeydik, sonra githuba geçtik, şimdide cloudflare pagestayız. Sonrada vercele geçmeyi düşünüyorum. 🤣 
-   </p>
-    
-  </article>
-      
+ </article>      
+        
   <article class="kutu">
       <p class="gonderi-kullaniciadi">Sistem Paylaşımı</p>
       <h2 class="gonderi-baslik">SarıSite Güncelleme Notları</h2>
@@ -239,7 +231,8 @@ function bizeUlasin() {
 }
 
 function echoSarisiteButEntranceFalse() {
-  document.title = `SARISİTE`;
+ document.title = `SARISİTE`;
+ location.search = "?entrance=false";
  document.querySelector("body").innerHTML = 
   ` <div class="ortayahizala">
       <p class="sarisite">SARISİTE</p>
