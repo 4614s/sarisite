@@ -41,7 +41,7 @@ function echoSarisiteButEntranceTrue() {
  </article>      
 
  <article class="kutu">
-   <p class="gönderi-kullaniciadi">Sistem</p>
+   <p class="gonderi-kullaniciadi">Sistem</p>
    <h2 class="gonderi-baslık">Sarısite desteği sona erdi.</h2>
    <p class="gonderi-paragraph">
      Alan adları: <br>
@@ -50,7 +50,7 @@ function echoSarisiteButEntranceTrue() {
      https://sarisite.pages.dev <br>
      <br>
      <b>Desteği bitirme sebebi:</b> Zaten boş bir projeydi. <br><br>
-     03 / 10 / 2025 – R.I.P. Sarısite 
+     03/10/2025 – R.I.P. Sarısite 
    </p>
  </article>
         
@@ -165,7 +165,7 @@ function echoSarisiteButEntranceTrue() {
     <footer>
       
       <div class="ortayahizalananlaryatayda telifyazisi">
-        <p><b>© <span id="year"></span> SARISİTE - Tüm Hakları Saklıdır.</b></p>
+        <p><b>© <span id="year"></span> SARISİTE - Açık kaynak bir projedir.</b></p>
       </div>
       <div class="ortayahizalananlaryatayda telifyazisi">
       <a id="bizeulasin" href="#" style="color: black;text-decoration:none;padding: 4px;"
