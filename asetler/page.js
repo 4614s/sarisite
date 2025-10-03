@@ -39,9 +39,23 @@ function echoSarisiteButEntranceTrue() {
    <h2 id="hg-mesaji" class="gonderi-baslik">Hoş geldiniz!</h2>
   <button id="isimayarlabutonu">İsim ayarla</button>
  </article>      
+
+ <article class="kutu">
+   <p class="gönderi-kullaniciadi">Sistem</p>
+   <h2 class="gonderi-baslık">Sarısite desteği sona erdi.</h2>
+   <p class="gonderi-paragraph">
+     Alan adları: <br>
+     http://4614.glitch.me/sarisite.html (artık kullanılmıyor) <br>
+     http://4614s.github.io/sarisite/ <br>
+     https://sarisite.pages.dev <br>
+     <br>
+     <b>Desteği bitirme sebebi:</b> Zaten boş bir projeydi. <br><br>
+     03 / 10 / 2025 – R.I.P. Sarısite 
+   </p>
+ </article>
         
   <article class="kutu">
-      <p class="gonderi-kullaniciadi">Sistem Paylaşımı</p>
+      <p class="gonderi-kullaniciadi">Sistem</p>
       <h2 class="gonderi-baslik">SarıSite Güncelleme Notları</h2>
       <p class="gonderi-paragraf">
       <details> 
