@@ -213,7 +213,7 @@ document.querySelector("#bizeulasin").addEventListener("click", bizeUlasin);
 
 document.querySelector("#arama-cubugu").addEventListener("keydown", e => {
   const This = document.querySelector("#arama-cubugu");
-  if(e.key = "Enter"){
+  if(e.key === "Enter"){
     if(This.value.trim().startsWith("/ms go")){
       const msg = This.value.trim().replaceAll("/ms go", "");
       location.href = `https://mavisite.pages.dev/?ref=sarisite&msg=${msg}`;
